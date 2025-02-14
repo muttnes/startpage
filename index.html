@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fire, walk with me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans:wght@400;700&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body
+    class="font-sans text-[#c5c8c6] flex justify-center items-center h-screen flex-col text-center bg-cover bg-center bg-fixed"
+    style="background-image: url('assets/img/lobos-pueblo-nopixel-modified.jpg'); font-family: 'Fira Code', monospace;"
+  >
+    <div class="flex justify-center items-center gap-[15px]">
+      <!-- Logo container -->
+      <div class="bg-black bg-opacity-50 p-2.5">
+        <div class="logo">
+          <img
+            src="assets/img/cronaa.png"
+            alt="Logo"
+            class="w-auto h-full max-h-[310px] max-[768px]:max-h-[250px] max-[480px]:max-h-[200px] block object-cover border-2 border-[#f8f8f2]"
+          />
+        </div>
+      </div>
+      <!-- Right section: Header, search and links -->
+      <div class="flex flex-col items-center gap-[15px] max-[360px]:w-full">
+        <!-- Header -->
+        <div class="w-full text-center text-[#f8f8f2] bg-black bg-opacity-50">
+          <h2 class="mb-2.5 font-light max-[480px]:text-[1.5em] text-[1.8em] flex items-center justify-center w-full h-[50px]">
+            "Fire, walk with me"
+          </h2>
+        </div>
+        <!-- Search and links container -->
+        <div class="bg-black bg-opacity-50 p-2.5">
+          <!-- Search -->
+          <div class="p-2.5 flex justify-start items-center gap-[15px] mb-2.5 border-2 border-white h-[50px] focus-within:border-[#87191b]">
+            <div class="w-full flex justify-start items-center ">
+              <form action="https://kagi.com/search?q=" method="GET" class="w-full flex">
+                <input
+                  type="text"
+                  name="q"
+                  placeholder="Buscar..."
+                  class="bg-transparent text-white text-base max-[480px]:text-[0.9em] font-mono outline-none p-2 w-full"
+                />
+              </form>
+            </div>
+          </div>
+          <!-- Links -->
+          <div class="grid grid-cols-4 gap-[15px] max-[768px]:grid-cols-2 max-[480px]:grid-cols-1">
+            <!-- Social -->
+            <div class="flex flex-col items-center min-w-[100px] max-[360px]:w-full p-[5px] border-2 border-[#f8f8f2]">
+              <h3 class="text-base text-white mb-[5px] border-b border-white w-full text-center">
+                Social
+              </h3>
+              <a
+                href="https://www.youtube.com"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >YouTube</a
+              >
+              <a
+                href="https://proton.me/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Proton</a
+              >
+              <a
+                href="https://mail.google.com"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Gmail</a
+              >
+              <a
+                href="https://x.com/home"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Twitter</a
+              >
+              <a
+                href="https://www.instagram.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Instagram</a
+              >
+            </div>
+            <!-- Dev -->
+            <div class="flex flex-col items-center min-w-[100px] max-[360px]:w-full p-[5px] border-2 border-[#f8f8f2]">
+              <h3 class="text-base text-white mb-[5px] border-b border-white w-full text-center">
+                Dev
+              </h3>
+              <a
+                href="https://www.github.com"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >GitHub</a
+              >
+              <a
+                href="https://about.gitlab.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Gitlab</a
+              >
+              <a
+                href="https://stackoverflow.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Stack Overflow</a
+              >
+              <a
+                href="https://chatgpt.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Chat GPT</a
+              >
+            </div>
+            <!-- Music -->
+            <div class="flex flex-col items-center min-w-[100px] max-[360px]:w-full p-[5px] border-2 border-[#f8f8f2]">
+              <h3 class="text-base text-white mb-[5px] border-b border-white w-full text-center">
+                Music
+              </h3>
+              <a
+                href="https://rateyourmusic.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Rate Your Music</a
+              >
+              <a
+                href="https://genius.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Genius</a
+              >
+              <a
+                href="https://www.last.fm/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Last.fm</a
+              >
+              <a
+                href="https://bandcamp.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Bandcamp</a
+              >
+            </div>
+            <!-- Linux -->
+            <div class="flex flex-col items-center min-w-[100px] max-[360px]:w-full p-[5px] border-2 border-[#f8f8f2]">
+              <h3 class="text-base text-white mb-[5px] border-b border-white w-full text-center">
+                Linux
+              </h3>
+              <a
+                href="https://archlinux.org/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Arch</a
+              >
+              <a
+                href="https://www.protondb.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Proton DB</a
+              >
+              <a
+                href="https://endeavouros.com/"
+                class="text-[0.9em] my-[3px] text-[#f8f8f2] transition-colors duration-300 hover:text-[#87191b]"
+                >Endeavour OS</a
+              >
+            </div>
+          </div>
+          <!-- Link end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
